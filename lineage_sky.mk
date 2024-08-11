@@ -22,7 +22,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
 # Project Matrixx
-MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_BUILD_TYPE := Official
 MATRIXX_MAINTAINER := alanpdk
 MATRIXX_CHIPSET := SM4450
 MATRIXX_BATTERY := 5000mAh
