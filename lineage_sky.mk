@@ -23,12 +23,18 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
-# Evolution-X Flags
+# Matrixx Flags
 TARGET_BOOT_ANIMATION_RES := 1080
+PREBUILT_KERNEL := true
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := kAiF
+MATRIXX_CHIPSET := SM4450
+MATRIXX_BATTERY := 5000mah
+MATRIXX_DISPLAY := 1080x2460
 WITH_GMS := true
-USE_PIXEL_CHARGER := true
-TARGET_INCLUDE_ACCORD := false
-BUILD_BCR := true
+WITH_GMS_COMMS_SUITE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_WALLEFFECT := true
 
 ## Device identifier
 PRODUCT_DEVICE := sky
